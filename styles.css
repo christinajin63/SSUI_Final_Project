@@ -1,0 +1,346 @@
+body {
+	font-family: Consolas, monaco, monospace;
+	font-size: 1.2em;
+	opacity: 0;
+}
+
+.loader {
+
+}
+
+.header {
+	font-family: Consolas, monaco, monospace;
+	max-height: 50px;
+	letter-spacing: 2px;
+	padding-top: 2%;
+	font-weight: 700;
+}
+
+#menu {
+	text-align: right;
+	padding-right: 1px;
+}
+
+#center {
+	text-align: center;
+	padding-left: 30px;
+}
+
+#logo {
+	text-align: center;
+	margin-top: 19.33px;
+}
+
+.onethird {
+	float: left;
+	width: 32%;
+}
+
+.sticky {
+	position: -webkit-sticky; /* Safari */
+    position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+.link {
+	color: black;
+	text-decoration: none;
+
+}
+
+/* unvisited link */
+.link a:link {
+	color: black;
+	text-decoration: none;
+}
+
+/* visited link */
+.link a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+/* mouse over link */
+.link a:hover {
+	color: black;
+	text-decoration: none;
+}
+
+/* selected link */
+.link a:active {
+	color: black;
+	text-decoration: none;
+}
+
+
+
+
+
+h2 {
+	font-size: 1.0em;
+	font-weight: 500;
+	letter-spacing: 0.08em;
+}
+
+h1 {
+	font-size: 2.3em;
+	font-weight: 900;
+	letter-spacing: 0.015em;
+}
+
+h3 {
+	font-size: 1.4em;
+	font-weight: 700;
+	letter-spacing: .05;
+	margin-top: 30px;
+}
+
+
+
+.work1 {
+	margin-top: 35%;
+}
+
+#work1-title {
+	margin-top: 16%;
+	left: 13%;
+	/* width: 40%; */
+	position: relative;
+}
+
+#work1-img {
+	position: absolute;
+	top: 35%;
+	left: 40%;
+}
+
+#ibmimg {
+	opacity: 80%;
+}
+
+#work1-des {
+	position: relative;
+	left: 25%;
+	width: 30%;
+	padding-top: 15px;
+
+}
+
+
+.work1 {
+	margin-top: 0%;
+}
+
+
+#work2-title {
+	margin-top: 34%;
+	left: 30%;
+	/* width: 40%; */
+	position: relative;
+}
+
+#work2-img {
+	position: absolute;
+	top: 130%;
+	left: 8%;
+}
+
+#work2-des {
+	position: relative;
+	left: 55%;
+	width: 30%;
+	padding-top: 45px;
+
+}
+
+.work3 {
+	margin-top: 0%;
+}
+
+
+#work3-title {
+	margin-top: 43.5%;
+	left: 35%;
+	/* width: 40%; */
+	position: relative;
+}
+
+#work3-img {
+	position: absolute;
+	top: 243%;
+	left: 36%;
+	z-index: -1;
+}
+
+#work3-des {
+	position: relative;
+	left: 18%;
+	width: 30%;
+	padding-top: 5px;
+
+}
+
+
+
+/* animations */
+
+.work {
+margin-top: 150px;
+margin-bottom: 150px;
+}
+
+.work .come-in:nth-child(odd) {
+animation-duration: 0.9s; /* So they look staggered */
+}
+
+.work.come-in .work-img {
+transform: translateY(150px);
+animation: come-in-img 1.2s ease forwards;
+}
+
+@keyframes come-in-img {
+to { transform: translateY(0); }
+}
+
+
+.work.come-in .work-title {
+transform: translateX(150px);
+animation: come-in-title 1.2s ease forwards;
+/* animation-delay: .5s; */
+}
+
+@keyframes come-in-title {
+to { transform: translateX(0); }
+}
+
+.work.come-in .work-des {
+transform: translateX(-150px);
+animation: come-in-des 1.2s ease forwards;
+animation-delay: .05s;
+}
+
+@keyframes come-in-des {
+to { transform: translateX(0); }
+}
+
+.work.come-in .work-detail-title {
+	transform: translateY(150px);
+	animation: come-in-des 1.2s ease forwards;
+	animation-delay: .05s;
+	}
+	
+	@keyframes come-in-des {
+	to { transform: translateX(0); }
+	}
+
+.work.come-in .work-detail-des {
+	transform: translateY(150px);
+	animation: come-in-des 1.2s ease forwards;
+	animation-delay: .05s;
+	}
+	
+	@keyframes come-in-des {
+	to { transform: translateX(0); }
+	}
+
+.work.come-in .panel-img {
+	transform: translateX(150px);
+	animation: come-in-des 1.2s ease forwards;
+	animation-delay: .05s;
+	}
+	
+	@keyframes come-in-des {
+	to { transform: translateX(0); }
+	}
+
+
+.detail-img {
+	width: 80%;
+	margin-top: 15%;
+	margin-bottom: 10%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	text-align: center;
+}
+
+.work-detail-title {
+	text-align: center;
+	margin-top: 10%;
+	margin-bottom:-10%;
+}
+
+.work-detail-des {
+	text-align: center;
+	width: 60%;
+	margin-top: 15%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+.panel-img {
+	width: 30.3%;
+	margin-left: 1%;
+	margin-right: 1%;
+	margin-top: 5%;
+	margin-bottom: -10%;
+}
+
+	
+
+.about-container {
+	margin-top: 19%;
+}
+
+
+
+.mission {
+	float: left;
+	width: 29%;
+	margin-left: 20%;
+	margin-top: 9%;
+	margin-bottom: 5%;
+}
+
+.portrait {
+	float: left;
+	width: 49%;
+	margin-bottom: 0%;
+}
+
+.about-des {
+	float: right;
+	width: 31%;
+	margin-left: 30%;
+	margin-right: 20%;
+	font-size: .9em;
+}
+
+
+.footer {
+	margin-top: 3.5%;
+	font-size: .7em;
+}
+
+.footer-right {
+	float: left;
+	width: 49%;
+	text-align: right;
+	z-index: 1;
+	font-weight: 900;
+}
+
+.footer-left {
+	float: left;
+	width: 49%;
+	z-index: 2;
+	font-weight: 700;
+}
+
+
+
+
+
+
